@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager Dashboard</title>
+  <link rel="stylesheet" href="taskmanagers.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <aside class="menu">
+      <div class="logo">
+            <img id="header-img" src="C:\Users\Administrator\JOY\CODECOMPASS\images\cod-compass-b.png" alt="CodeCompass" width="70px">
+            <h3>CodeCompass</h3>
+      </div>
+
+        <nav>
+        <ul>
+          <li class="menu-item active"><a href="C:\Users\Administrator\JOY\CODECOMPASS\codecompass.html">Home</a></li>
+          <li class="menu-item"><a href="#courses">Courses</a></li>
+          <li class="menu-item"><a href="#learning-roadmap">Roadmap</a></li>
+        </ul>
+      </nav>
+      <button class="logout-btn">Logout</button>
+    </aside>
+    <main class="content">
+        <section class="task-manager">
+          <h2>Task Manager</h2>
+          <div class="my-task">
+            <h3>My Task</h3>
+            <textarea id="taskInput" placeholder="Enter your task here..."></textarea>
+            <button id="addTaskBtn">Add Task</button>
+          </div>
+          <div class="tasks-container">
+            <div class="planned-tasks">
+              <h3>Planned Tasks</h3>
+              <ul id="plannedTasksList"></ul>
+            </div>
+            <div class="done-tasks">
+              <h3>Done Tasks</h3>
+              <ul id="doneTasksList"></ul>
+            </div>
+          </div>
+        </section>
+        
+
+        <section class="courses" id="courses">
+            <h2>My Courses</h2>
+            <div class="course-container">
+            <div class="active-courses">
+                <h3>Active</h3>
+                <div class="course-item">
+                <span> Add Course</span>
+                <button class="add-course-btn">+</button>
+                <textarea class="course-textarea" placeholder="Enter new course"></textarea>
+                </div>
+            </div>
+            <div class="completed-courses">
+                <h3>Completed</h3>
+            </div>
+            </div>
+            <div class="my-learning">
+            <h3>My Learning Goal</h3>
+            <textarea id="learningGoalInput" placeholder="Enter your learning goal here..."></textarea>
+            <button id="saveLearningGoalBtn">Save</button>
+            <button id="editLearningGoalBtn">Edit</button>
+            </div>
+        </section>
+
+
+        <section class="learning-roadmap" id="learning-roadmap">
+            <h2>Learning Roadmap</h2>
+            <div class="add-step-container">
+              <h3>Roadmap</h3>
+              <textarea id="stepInput" placeholder="Enter new step"></textarea>
+              <button id="addStepBtn">Add Step</button>
+            </div>
+            <div class="my-roadmap">
+              <h3>My Roadmap</h3>
+              <ul id="roadmapList"></ul>
+            </div>
+          </section>
+      </main>
+      
+        
+    
+  <script src="taskmanagers.js"></script>
+</body>
+
+</html>

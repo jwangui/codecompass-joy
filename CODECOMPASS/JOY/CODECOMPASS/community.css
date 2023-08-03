@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+    background: #0672E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.logo h1 {
+    font-size: 21px;
+    margin-top:20px;
+}
+
+.container {
+    background: #040849;
+    color: #fafafa;
+    border-bottom: 6px solid #36bd09;
+    border-right: 6px solid #3BD009;
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    padding : 35px;
+    margin: 40px 25px 20px 25px;
+    text-align: center;
+
+
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card-content1 {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.card-content2 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*DISCORD*/
+
+.discord {
+    display: flex;
+    align-items: center;
+  }
+.discord img {
+    margin-left: 5px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 3.5px;
+}
+  
+/*BUTTON*/
+
+.card-button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg,  #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    margin-bottom: 5px;
+}
+
+.card-button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
